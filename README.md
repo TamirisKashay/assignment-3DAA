@@ -49,6 +49,24 @@ This project models a smart city's infrastructure network as a graph where verti
 ## 5. Results
 
 ### Experimental Benchmark Output
+### Benchmark Results Table
+| Graph Size | Vertices ($V$) | Edges ($E$) | Algorithm | Avg Time (ms) | Avg Operations |
+| :--- | :---: | :---: | :--- | :---: | :---: |
+| **Small** | 10 | 30 | Kruskal | 0.2695 | 30 |
+| Small | 10 | 30 | Prim | 1.2567 | 83 |
+| Small | 10 | 30 | Dijkstra | 0.3056 | 76 |
+| Small | 10 | 30 | TopoSort | 0.1610 | N/A |
+| Small | 10 | 30 | SCC | 0.1763 | N/A |
+| **Medium** | 100 | 500 | Kruskal | 0.4549 | 500 |
+| Medium | 100 | 500 | Prim | 0.3740 | 1487 |
+| Medium | 100 | 500 | Dijkstra | 0.2017 | 1196 |
+| Medium | 100 | 500 | TopoSort | 0.0987 | N/A |
+| Medium | 100, | 500 | SCC | 0.2125 | N/A |
+| **Large** | 1000 | 5000 | Kruskal | 2.8342 | 5000 |
+| Large | 1000 | 5000 | Prim | 3.1143 | 14984 |
+| Large | 1000 | 5000 | Dijkstra | 2.3788 | 11944 |
+| Large | 1000 | 5000 | TopoSort | 0.5324 | N/A |
+| Large | 1000 | 5000 | SCC | 1.4859 | N/A |
 ```text
 Running experiments (5 iterations each)...
 --- Small Graph (V=10, E=30) ---
